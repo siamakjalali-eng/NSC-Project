@@ -1,0 +1,39 @@
+{
+  "test": "NSC W9A structural compression development holdout",
+  "seed": 20260818,
+  "train_samples": 4000,
+  "holdout_samples_per_class": 4000,
+  "dictionary_parameters": 12,
+  "precision": "float64",
+  "tolerance": 1e-10,
+  "results": [
+    {
+      "dataset": "generator_structured",
+      "compatible": true,
+      "selected_mode": "NSC",
+      "relative_reconstruction_error": 1.0207761576262164e-16,
+      "raw_bytes": 128128,
+      "raw_zlib_bytes": 72069,
+      "nsc_candidate_bytes": 36108,
+      "selected_bytes": 36108,
+      "selected_zlib_bytes": 32175,
+      "ratio_to_raw": 0.28181193806193805,
+      "ratio_to_raw_zlib": 0.44644715480997377
+    },
+    {
+      "dataset": "unstructured_random",
+      "compatible": false,
+      "selected_mode": "RAW_FALLBACK",
+      "relative_reconstruction_error": 0.0,
+      "raw_bytes": 128128,
+      "raw_zlib_bytes": 122665,
+      "nsc_candidate_bytes": 36108,
+      "selected_bytes": 128128,
+      "selected_zlib_bytes": 122665,
+      "ratio_to_raw": 1.0,
+      "ratio_to_raw_zlib": 1.0
+    }
+  ],
+  "claim_boundary": "Development test with a known fixed generator dictionary  It is not a generator-blind test and establishes neither universal compression nor new physics",
+  "verdict": "PASS"
+}
