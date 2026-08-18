@@ -1,0 +1,22 @@
+{
+  "demo": "NSC structural video motion compression",
+  "resolution": [
+    960,
+    540
+  ],
+  "fps": 24,
+  "frames": 240,
+  "seconds": 10,
+  "raw_motion_matrix_bytes": 17280,
+  "raw_motion_zlib_bytes": 8483,
+  "nsc_delta_bytes": 1967,
+  "nsc_delta_zlib_bytes": 1978,
+  "ratio_to_raw": 0.11383101851851851,
+  "ratio_to_raw_zlib": 0.23317222680655428,
+  "motion_size_reduction_vs_zlib": 0.7668277731934457,
+  "coefficient_bits": 16,
+  "pixel_mse": 0.002483477474443892,
+  "pixel_psnr_db": 74.18020135642399,
+  "render_and_encode_seconds": 76.97921353599986,
+  "claim_boundary": "Compresses the geometric camera motion stream rather than the video texture bitstream"
+}
